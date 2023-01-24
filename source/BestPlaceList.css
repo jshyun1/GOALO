@@ -1,0 +1,59 @@
+
+/* 주제 타이틀 바 스타일 조정 */
+  #titleDiv {
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+    box-shadow: 2 solid grey;
+  }
+
+  #title {
+    padding: 50px 50px;
+    color: rgb(0, 0, 60);
+    font-size: 160%;
+  }
+
+/* 사진과 별점, 순위, 별점 사진 스타일 조정 */
+  .displayScore {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+  #starImg1, #starImg2, #starImg3, #starImg4, #starImg5, #starImg6, #starImg7, #starImg8, #starImg9, #starImg10{
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+  }
+
+  h4 {
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+  }
+
+  img {
+    width: 360px;
+    height: 240px;
+  }
+  #rank1, #rank2, #rank3, #rank4, #rank5, #rank6, #rank7, #rank8, #rank9,#rank10{
+    color: grey;
+    float: right;
+  }
+
+/* footer 부분 내부 스타일 조정 */
+  footer {
+    background-color: #eee;
+    padding: 25px;
+  }
+
+  ul,
+  li {
+    list-style-type: none;
+  }
+
+  .list {
+    margin-top: 15px;
+  }

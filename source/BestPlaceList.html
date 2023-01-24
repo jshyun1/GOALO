@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOALO-혼자서 갈수있는 장소!</title>
+
+  <!-- footer에 적용될 부트스트랩 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- 리스트 페이지들 초기화 스타일시트를 외부로 빼서 썼다 -->
+  <link rel="stylesheet" href="listpagesReset.css">
+  <!-- 헤더 외부일 시트 -->
+  <link rel="stylesheet" href="headerStyle.css">
+  <link rel="stylesheet" href="BestPlaceList.css">
+
+  <script src="BestPlaceList.js" charset="utf-8"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="BestPlaceListElement.js" charset="utf-8"></script>
+</head>
+<body>
+  <!-- 1. 헤더 -->
+  <header id="header">
+    <a href="main.html"><img src="logo_wigo.png"  class="firstImage"/></a>
+    <img src="logo_whereigo.png" class="secondImage" />
+  </header>
+  <!-- 2. 주제 타이틀과 베스트 장소 리스트가 있는 section -->
+  <section>
+    <div id="titleDiv">
+      <p id="title"> Best Place 5</p>
+      <br/>
+    </div>
+    <br/><br/>
+    <a href="information.html" onclick="setValue(1)">
+      <div id="bestPlace1">
+        <img src="" id="bestPlaceImg1" />
+        <h4 class="displayScore" id="1">4.3</h4>
+        <img src="fullStar.png" id="starImg1" />
+        <h4 id="bestPlaceName1"></h4>
+        <h2 id="rank1">1</h2>
+      </div>
+    </a>
+    <hr/><br/>
+
+    <a href="information.html" onclick="setValue(2)">
+      <div id="bestPlace2">
+        <img src="" id="bestPlaceImg2" />
+        <h4 class="displayScore" id="2">4.0</h4>
+        <img src="fullStar.png" id="starImg2" />
+        <h4 id="bestPlaceName2"></h4>
+        <h2 id="rank2">2</h2>
+      </div>
+    </a>
+    <hr/><br/>
+
+    <a href="information.html"  onclick="setValue(3)">
+      <div id="bestPlace3">
+        <img src="" id="bestPlaceImg3"">
+        <h4 class="displayScore" id="3">3.8</h4>
+        <img src="fullStar.png" id="starImg3" />
+        <h4 id="bestPlaceName3"></h4>
+        <h2 id="rank3">3</h2>
+      </div>
+    </a>
+    <hr/><br/>
+
+    <a href="information.html" onclick="setValue(4)>
+      <div id="bestPlace4">
+        <img src="" id="bestPlaceImg4">
+        <h4 class="displayScore" id="4">3.0</h4>
+        <img src="fullStar.png" id="starImg4" />
+        <h4 id="bestPlaceName4"></h4>
+        <h2 id="rank4">4</h2>
+      </div>
+    </a>
+    <hr/><br/>
+
+    <a href="information.html" onclick="setValue(5)">
+      <div id="bestPlace5">
+        <img src="" id="bestPlaceImg5" >
+        <h4 class="displayScore" id="5">3.0</h4>
+        <img src="fullStar.png" id="starImg5" />
+        <h4 id="bestPlaceName5"> </h4>
+        <h2 id="rank5">5</h2>
+      </div>
+    </a>
+    <hr/><br/>
+    <a href="information.html"  onclick="setValue(6)">
+      <div id="bestPlace6">
+        <img src="" id="bestPlaceImg6">
+        <h4 class="displayScore" id="6">0.0</h4>
+        <img src="fullStar.png" id="starImg6" />
+        <h4 id="bestPlaceName6"></h4>
+        <h2 id="rank6">6</h2>
+      </div>
+    </a>
+    <hr/><br/>
+    <a href="information.html" onclick="setValue(7)">
+      <div id="bestPlace7">
+        <img src="http://placehold.it/360x240" id="bestPlaceImg7" >
+        <h4 class="displayScore" id="7">0.0</h4>
+        <img src="fullStar.png" id="starImg7" />
+        <h4 id="bestPlaceName7"></h4>
+        <h2 id="rank7">7</h2>
+      </div>
+    </a>
+    <hr/><br/>
+    <a href="information.html"  onclick="setValue(8)">
+      <div id="bestPlace8">
+        <img src="http://placehold.it/360x240" id="bestPlaceImg8">
+        <h4 class="displayScore" id="8"></h4>
+        <img src="fullStar.png" id="starImg8" />
+        <h4 id="bestPlaceName8">  </h4>
+        <h2 id="rank8">8</h2>
+      </div>
+    </a>
+    <hr/><br/>
+    <a href="information.html"  onclick="setValue(9)">
+      <div id="bestPlace9">
+        <img src="http://placehold.it/360x240" id="bestPlaceImg9">
+        <h4 class="displayScore" id="9"></h4>
+        <img src="fullStar.png" id="starImg9" />
+        <h4 id="bestPlaceName9"></h4>
+        <h2 id="rank9">9</h2>
+      </div>
+    </a>
+    <hr/><br/>
+    <a href="information.html"  onclick="setValue(10)">
+      <div id="bestPlace10">
+        <img src="http://placehold.it/360x240" id="bestPlaceImg10">
+        <h4 class="displayScore" id="10"></h4>
+        <img src="fullStar.png" id="starImg10" />
+        <h4 id="bestPlaceName10"></h4>
+        <h2 id="rank10">10</h2>
+      </div>
+    </a>
+    <hr/><br/>
+  </section>
+
+  <!-- 3. 바닥글 -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h2>GOALO</h2>
+          <p>Are you worried about where to go alone? You can find a wide range of restaurants, cafes, and other places on the goalo site.</p>
+
+        </div>
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md">
+          <h5><strong>Contact Info</strong></h5>
+          <p><strong>Email:</strong> shsy1512@gmail.com</p>
+          <p><strong>Tel.:</strong> (010) 1234 5678</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

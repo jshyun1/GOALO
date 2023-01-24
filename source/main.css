@@ -1,0 +1,73 @@
+
+
+ /* 헤더 밑 전체적인 레이아웃 내부 스타일 시트 적용  */
+  * {
+    /* 전체 코드에 적용 */
+    margin: 0;
+    padding: 0;
+    /* 여백 설정 초기화 */
+    font-family: '맑은 고딕', 'Malgun Gothic', Gothic, sans-serif;
+    /* 폰트 설정, 설정이 여러가지인 이유는 각자의 브라우저에 없을 수 있기 때문에 설정했다. 뒤로 갈수록 보편적인폰트 */
+  }
+
+  a {
+    /* a링크에 적용 */
+    text-decoration: none;
+    /* 링크 밑줄 다 삭제 */
+  }
+
+  #page-wrapper {
+    margin: 0 auto;
+  }
+
+  .image {
+    float: left;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+  }
+
+
+
+
+
+  footer {
+    background-color: #eee;
+    padding: 25px;
+  }
+
+  ul,
+  li {
+    list-style-type: none;
+  }
+
+  .list {
+    margin-top: 15px;
+  }
+
+    /* 이미지 슬라이드 내부 스타일 시트  */
+
+        ul {
+          list-style: none outside none;
+          padding-left: 0;
+          margin: 0;
+        }
+
+        .demo .item {
+          margin-bottom: 60px;
+        }
+
+        .content-slider img {
+          margin: 0;
+          text-align: center;
+          color: #FFFFFF;
+        }
+
+        .demo {
+          display: block;
+          margin: 0 auto;
+          width: 1200px;
+        }

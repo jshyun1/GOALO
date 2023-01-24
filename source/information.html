@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GOALO-혼자서 갈수있는 장소!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 헤더 외부 스타일 시트 -->
+  <link rel="stylesheet" href="headerStyle.css">
+  <link rel="stylesheet" href="information.css">
+  <!-- 별점 주기 외부 스타일 시트 -->
+  <link rel="stylesheet" href="starRating.css">
+
+  <!-- jquery 사용 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<!-- indexedDB method(읽기, 추가, 삭제) 쓰기 위한 외부 자바스크립트 -->
+  <script src="DataBaseMethods.js"></script>
+
+  <!-- 구글맵 api -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI5KBPdHnf-Ki8HrwmtHnLQfp_IHsy2MA&callback=initMap" async defer>
+  </script>
+</head>
+
+<body>
+  <!-- 1. 헤더 -->
+  <header id="header">
+    <a href="main.html"><img src="logo_wigo.png"  class="firstImage"/></a>
+    <img src="logo_whereigo.png" class="secondImage">
+  </header>
+  <br/>
+  <br/>
+
+  <!-- 2. 이미지와 자세한 정보 테이블이 있는 섹션 -->
+  <section>
+    <article>
+      <div class="taste"></div>
+    </article>
+
+    <hr/>
+    <div id="page-wrapper"></div>
+  </section>
+
+  <!-- 3. 구글 Map과 해당 장소에 대한 위치 정보 마커로 찍는 aside -->
+  <aside id="main-aside">
+    <div id="map"></div>
+  </aside>
+
+  <!-- 4. 별점 주기 -->
+  <div class="star">
+    <br/><br/>
+    <span class="questionScore">이곳 평점은?</span>
+    <span class="Score" id="displayScore">3.0</span>
+    <span class="star-input">
+  <span class="input">
+      <input type="radio" name="star-input" value="1" id="p1">
+      <label for="p1">1</label>
+      <input type="radio" name="star-input" value="2" id="p2">
+      <label for="p2">2</label>
+      <input type="radio" name="star-input" value="3" id="p3">
+      <label for="p3">3</label>
+      <input type="radio" name="star-input" value="4" id="p4">
+      <label for="p4">4</label>
+      <input type="radio" name="star-input" value="5" id="p5">
+      <label for="p5">5</label>
+    </span>
+    <output for="star-input"><b>0</b>점</output>
+    </span>
+    <input type="button" value="별점 주기" id="input" />
+    <br/><br/>
+  </div>
+
+
+
+  <!-- 5. 댓글 달기 -->
+  <div id="lv-container" data-id="city" data-uid="MTAyMC8zNjg2Mi8xMzM5OA==">
+    <script>
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+
+        if (typeof LivereTower === 'function') {
+          return;
+        }
+
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+    <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+  </div>
+
+<!-- 6. 푸터 -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h2>GOALO</h2>
+          <p>Are you worried about where to go alone? You can find a wide range of restaurants, cafes, and other places on the wigo site.</p>
+
+        </div>
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md">
+          <h5><strong>Contact Info</strong></h5>
+          <p><strong>Address:</strong>
+            <!-- Random Adress -->
+          </p>
+          <p><strong>Email:</strong> email@gmail.com</p>
+          <p><strong>Tel.:</strong> (010) 1234 5678</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="information.js" charset="utf-8"></script>
+<!-- 별점 몇 점 줄 지 마우스로 mouse overing 하거나 클릭할 시의 이벤트 걸기 -->
+<script src="informationClick.js" charset="utf-8"></script>
+</body>
+
+</html>

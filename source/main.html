@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOALO-혼자서 갈수있는 장소!</title>
+
+  <link rel="stylesheet" href="main.css">
+
+  <!-- main에서 DB 값 불러오기 -->
+  <script src="starScoreDB.js"></script>
+  <!-- 푸터에 쓰이는 부터스트랩 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- 이미지 슬라이드에 쓰이는 외부 스타일 시트 -->
+  <link rel="stylesheet" href="main/lightslider/css/lightslider.css" />
+
+  <!-- jquery와 외부 javascript로 이미지 슬라이드 이벤트 작용 -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="main/lightslider/js/lightslider.js"></script>
+  <!-- bestplace list 뿌릴 때 별점이 필요하여 db 용 커넥트를 쓰기위해 따로 모아둔 자바 스크립을 불러온다-->
+  <script src="DataBaseMethods.js"></script>
+  <script src="main.js"></script>
+
+</head>
+
+<body>
+  <br>
+  <!--1. 메인 헤더 -->
+  <header>
+    <div class="logo">
+      <img src="main/Logo.png" width="400" height="250" />
+  </header>
+</div>
+  <hr>
+
+
+    <!-- 2. 이미지 슬라이드 -->
+    <div class="demo">
+      <div class="item">
+          <ul id="content-slider" class="content-slider">
+              <li>
+                  <a href="BestPlaceList.html" onclick="sendBestPlace(1)"><img src="main/park.png" width="400" height="300"/></a>
+              </li>
+              <li>
+                  <a href="BestPlaceList.html" onclick="sendBestPlace(2)"><img src="main/art.png"/ width="400" height="300"/></a>
+              </li>
+              <li>
+                  <a href="BestPlaceList.html" onclick="sendBestPlace(3)"><img src="main/book.png" width="400" height="300"/></a>
+              </li>
+              <li>
+                  <a href="BestPlaceList.html" onclick="sendBestPlace(4)"><img src="main/japanfood.png" width="400" height="300"/></a>
+              </li>
+              <li>
+                  <a href="BestPlaceList.html" onclick="sendBestPlace(5)"><img src="main/drink.png" width="400" height="300"/></a>
+              </li>
+              <li>
+                  <a href="BestPlaceList.html" onclick="sendBestPlace(6)"><img src="main/cafe.png" width="400" height="300"/></a>
+              </li>
+          </ul>
+      </div>
+  </div>
+    <hr/>
+
+    <!-- 3. footer -->
+    <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+        <h2>GOALO</h2>
+        <p>Are you worried about where to go alone?
+        You can find a wide range of restaurants, cafes, and other places on the GOALO site.</p>
+
+        </div>
+        <!-- 칸 조금 띄우기 -->
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md">
+          <h5><strong>Contact Info</strong></h5>
+          <p><strong>Email:</strong> shsy1512@gmail.com</p>
+          <p><strong>Tel.:</strong> (010) 1234 5678</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
